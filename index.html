@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AddressBook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1>My AddressBook</h1>
+                </div>
+                <div id="main-content">
+                    <div id="create-contact">
+                        <form id="create-contact-form">
+                            <div class="form-group">
+                                    <label for="new-first-name">First Name</label>
+                                    <input type="text" class="form-control" id="new-first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="new-last-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-phone-number">Phone Number</label>
+                                    <input type="text" class="form-control" id="new-phone-number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-email">Email</label>
+                                    <input type="text" class="form-control" id="new-email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-address">Address</label>
+                                    <input type="text" class="form-control" id="new-address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-work">Work Address</label>
+                                    <input type="text" class="form-control" id="new-work">
+                                </div>
+                            </div>
+                            <button type="submit">Add Contact</button>
+                            <hr>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                     <div id="contacts-container">
+                        <h2>My contacts</h2>
+                         <ul id="contacts-list"></ul>
+                      </div>              
+                </div>
+                <div class="col-6">
+                    <div id="show-contact">            
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
